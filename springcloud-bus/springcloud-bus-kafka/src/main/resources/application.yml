@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    stream:
+      default-binder: kafka
+      kafka:
+        binder:
+          brokers: trserver:9092
+          auto-create-topics: true
+          configuration:
+            auto:
+              offset:
+                reset: latest

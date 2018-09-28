@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: bus-config-center
+  cloud:
+    config:
+      server:
+        git:
+          .
+          username: xiaotutu365
+          password: turui0719
+          uri:
