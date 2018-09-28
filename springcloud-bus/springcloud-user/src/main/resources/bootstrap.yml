@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: user-center
+  cloud:
+    config:
+      uri: http://localhost:5050
+      name: config
+      profile: dev
+      label: matser
+    stream:
+      default-binder: kafka
+      kafka:
+        binder:
+          brokers: ubuntu-B85M-D2V-SI:9092
+          auto-create-topics: true
+          configuration:
+            auto:
+              offset:
+                reset: latest
+  profiles:
+    active: default
+server:
+  port: 5052

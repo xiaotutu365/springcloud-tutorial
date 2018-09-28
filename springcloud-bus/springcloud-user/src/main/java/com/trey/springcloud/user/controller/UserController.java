@@ -1,4 +1,4 @@
-package com.trey.springcloud.bus.kafka.controller;
+package com.trey.springcloud.user.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/bus/config")
-public class ConfigController {
-
+@RequestMapping("/bus/user")
+public class UserController {
     @Autowired
     private Environment env;
 
