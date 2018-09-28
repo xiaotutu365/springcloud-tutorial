@@ -1,2 +1,2 @@
-jdbc.user=root
+jdbc.username=root
 jdbs.password=root

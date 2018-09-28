@@ -10,3 +10,8 @@ spring:
             auto:
               offset:
                 reset: latest
+    config:
+      name: config
+      profile: dev
+      label: master
+      uri: http://localhost:5050/
