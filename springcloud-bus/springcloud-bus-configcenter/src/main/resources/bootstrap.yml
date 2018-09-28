@@ -5,7 +5,6 @@ spring:
     config:
       server:
         git:
-          .
           username: xiaotutu365
           password: turui0719
-          uri:
+          uri: 
