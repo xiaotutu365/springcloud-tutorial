@@ -6,7 +6,7 @@ spring:
       uri: http://localhost:5050
       name: config
       profile: dev
-      label: matser
+      label: master
     stream:
       default-binder: kafka
       kafka:
@@ -21,3 +21,8 @@ spring:
     active: default
 server:
   port: 5052
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh, bus-env

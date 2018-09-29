@@ -1,10 +1,13 @@
+## 消息总线端口
+server:
+  port: 5051
 spring:
   cloud:
     stream:
       default-binder: kafka
       kafka:
         binder:
-          brokers: trserver:9092
+          brokers: ubuntu-B85M-D2V-SI:9092
           auto-create-topics: true
           configuration:
             auto:
@@ -15,6 +18,3 @@ spring:
       profile: dev
       label: master
       uri: http://localhost:5050/
-## 消息总线端口
-server:
-  port: 5051
